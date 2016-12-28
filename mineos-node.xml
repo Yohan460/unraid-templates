@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>mineos-node</Name>
-  <Repository>hexparrot/mineos:node-jessie</Repository>
-  <Registry>https://hub.docker.com/r/hexparrot/mineos/</Registry>
+  <Repository>hexparrot/mineos:node-wily</Repository>
+  <Registry>https://registry.hub.docker.com/r/yohan460/docker-mineos/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Support>http://lime-technology.com/forum/index.php?topic=51498.0</Support>
@@ -50,13 +50,18 @@ DEFAULT PASSWORD: mypass[br]
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>25565-25575</HostPort>
-        <ContainerPort>25565-25575</ContainerPort>
+        <HostPort>25565-25570</HostPort>
+        <ContainerPort>25565-25570</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
         <HostPort>8443</HostPort>
         <ContainerPort>8443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>25</HostPort>
+        <ContainerPort>22</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
@@ -75,8 +80,9 @@ DEFAULT PASSWORD: mypass[br]
       <Mode/>
     </Variable>
   </Environment>
-  <Config Name="minecraft server ports" Target="25565-25575" Default="25565-25575" Mode="tcp" Description="Each minecraft server needs its own port." Type="Port" Display="always" Required="true" Mask="false">25565-25575</Config>
+  <Config Name="minecraft server ports" Target="25565-25570" Default="25565-25570" Mode="tcp" Description="Each minecraft server needs its own port." Type="Port" Display="always" Required="true" Mask="false">25565-25570</Config>
   <Config Name="minecraft files" Target="/var/games/minecraft" Default="/mnt/user/appdata/minecraft/" Mode="rw" Description="Container Path: /var/games/minecraft" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/minecraft/</Config>
-  <Config Name="admin interface port" Target="8443" Default="8443" Mode="tcp" Description="Container Port: 8443" Type="Port" Display="always" Required="true" Mask="false">8443</Config>
+  <Config Name="admin interface port" Target="8443" Default="8443" Mode="tcp" Description="Container Port: 8443" Type="Port" Display="always" Required="true" Mask="false">8443</Config>ys" Required="true" Mask="false">/mnt/user/appdata/minecraft/</Config>
+  <Config Name="ssh interface port" Target="25" Default="25" Mode="tcp" Description="Container Port: 22" Type="Port" Display="always" Required="true" Mask="false">25</Config>
   <Config Name="admin interface password" Target="USER_PASSWORD" Default="mypass" Mode="" Description="Container Variable: USER_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false">mypass</Config>
 </Container>
