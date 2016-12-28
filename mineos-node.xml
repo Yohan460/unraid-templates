@@ -26,7 +26,6 @@ DEFAULT PASSWORD: mypass[br]
   <WebUI>https://[IP]:[PORT:8443]</WebUI>
   <TemplateURL>https://github.com/Yohan460/unraid-templates/blob/master/mineos-node.xml</TemplateURL>
   <Icon>http://i.imgur.com/P6RRtHH.png</Icon>
-  <ExtraParams/>
   <DateInstalled>1480139680</DateInstalled>
   <Description>MineOS is a server front-end to ease managing Minecraft administrative tasks. This iteration using Node.js aims to enhance previous MineOS scripts (Python-based), by leveraging the event-triggering, asyncronous model of Node.JS and websockets.[br]
 [br]
@@ -49,7 +48,6 @@ DEFAULT PASSWORD: mypass[br]
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <Name>test Name</Name>
         <HostPort>25565-25570</HostPort>
         <ContainerPort>25565-25570</ContainerPort>
         <Protocol>tcp</Protocol>
