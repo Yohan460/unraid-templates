@@ -44,44 +44,10 @@ DEFAULT PASSWORD: mypass[br]
 [b]25565-25575[/b] Minecraft server ports, by default you can have 10 servers. If you need more you will have to add more port bindings.[br]
 [b]Environment Variables:[/b][br]
 [b]USER_PASSWORD[/b] Password for the web admin interface</Description>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>25565-25570</HostPort>
-        <ContainerPort>25565-25570</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>8443</HostPort>
-        <ContainerPort>8443</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>22</HostPort>
-        <ContainerPort>25</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/minecraft/</HostDir>
-      <ContainerDir>/var/games/minecraft</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Environment>
-    <Variable>
-      <Value>mypass</Value>
-      <Name>USER_PASSWORD</Name>
-      <Mode/>
-    </Variable>
-  </Environment>
   <Network Default="bridge">bridge</Network>
   <Config Name="minecraft server ports" Target="25565-25570" Default="25565-25570" Mode="tcp" Description="Each minecraft server needs its own port." Type="Port" Display="always" Required="true">25565-25570</Config>
   <Config Name="minecraft files" Target="/var/games/minecraft" Default="/mnt/user/appdata/minecraft/" Mode="rw" Description="Container Path: /var/games/minecraft" Type="Path" Display="always" Required="true">/mnt/user/appdata/minecraft/</Config>
   <Config Name="admin interface port" Target="8443" Default="8443" Mode="tcp" Description="Container Port: 8443" Type="Port" Display="always" Required="true" Mask="false">8443</Config>
-  <Config Name="ssh interface port" Target="25" Default="25" Mode="tcp" Description="Container Port: 22" Type="Port" Display="always" Required="true">25</Config>
+  <Config Name="ssh interface port" Target="25" Default="22" Mode="tcp" Description="Container Port: 22" Type="Port" Display="always" Required="true">25</Config>
   <Config Name="admin interface password" Target="USER_PASSWORD" Default="mypass" Mode="" Description="Container Variable: USER_PASSWORD" Type="Variable" Display="always" Required="true">mypass</Config>
 </Container>
