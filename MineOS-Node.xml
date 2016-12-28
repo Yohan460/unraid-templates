@@ -1,6 +1,6 @@
 <Container>
-  <Name>mineos-node</Name>
-  <Repository>hexparrot/mineos:node-wily</Repository>
+  <Name>MineOS-Node</Name>
+  <Repository>yohan460/docker-mineos</Repository>
   <Registry>https://registry.hub.docker.com/r/yohan460/docker-mineos/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
