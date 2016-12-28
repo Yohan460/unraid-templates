@@ -1,5 +1,4 @@
-<?xml version="1.0"?>
-<Container version="2">
+<Container>
   <Name>mineos-node</Name>
   <Repository>hexparrot/mineos:node-wily</Repository>
   <Registry>https://registry.hub.docker.com/r/yohan460/docker-mineos/</Registry>
