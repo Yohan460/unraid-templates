@@ -1,6 +1,6 @@
 <Container>
   <Name>MineOS-Node</Name>
-  <Repository>yohan460/docker-mineos</Repository>
+  <Repository>yohan460/mineos-docker</Repository>
   <Registry>https://registry.hub.docker.com/r/yohan460/docker-mineos/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
