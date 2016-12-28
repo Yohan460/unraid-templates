@@ -58,8 +58,8 @@ DEFAULT PASSWORD: mypass[br]
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
-        <HostPort>25</HostPort>
-        <ContainerPort>22</ContainerPort>
+        <HostPort>22</HostPort>
+        <ContainerPort>25</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
