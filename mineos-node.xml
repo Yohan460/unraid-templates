@@ -25,7 +25,7 @@ DEFAULT PASSWORD: mypass[br]
 [b]USER_PASSWORD[/b] Password for the web admin interface</Overview>
   <Category>MediaServer:Other</Category>
   <WebUI>https://[IP]:[PORT:8443]</WebUI>
-  <TemplateURL>https://github.com/atribe/unRAID-docker/blob/master/mineos-node.xml</TemplateURL>
+  <TemplateURL>https://github.com/Yohan460/unraid-templates/blob/master/mineos-node.xml</TemplateURL>
   <Icon>http://i.imgur.com/P6RRtHH.png</Icon>
   <ExtraParams/>
   <DateInstalled>1480139680</DateInstalled>
