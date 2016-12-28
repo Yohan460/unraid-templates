@@ -49,6 +49,7 @@ DEFAULT PASSWORD: mypass[br]
     <Mode>bridge</Mode>
     <Publish>
       <Port>
+        <Name>test Name</Name>
         <HostPort>25565-25570</HostPort>
         <ContainerPort>25565-25570</ContainerPort>
         <Protocol>tcp</Protocol>
