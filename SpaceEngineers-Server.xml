@@ -1,6 +1,6 @@
 <Container>
   <Name>SpaceEngineers-Server</Name>
-  <Repository>yohan460/SpaceEngineers-Server</Repository>
+  <Repository>Yohan460/spaceengineers-server</Repository>
   <Registry>https://registry.hub.docker.com/r/yohan460/spaceengineers-server</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
