@@ -49,6 +49,5 @@ DEFAULT PASSWORD: mypass[br]
   <Config Name="minecraft server ports" Target="25565-25570" Default="25565-25570" Mode="tcp" Description="Each minecraft server needs its own port." Type="Port" Display="always" Required="true">25565-25570</Config>
   <Config Name="minecraft files" Target="/var/games/minecraft" Default="/mnt/user/appdata/minecraft/" Mode="rw" Description="Container Path: /var/games/minecraft" Type="Path" Display="always" Required="true">/mnt/user/appdata/minecraft/</Config>
   <Config Name="admin interface port" Target="8443" Default="8443" Mode="tcp" Description="Container Port: 8443" Type="Port" Display="always" Required="true" Mask="false">8443</Config>
-  <Config Name="ssh interface port" Target="22" Default="22" Mode="tcp" Description="Container Port: 22" Type="Port" Display="always" Required="true">25</Config>
   <Config Name="admin interface password" Target="USER_PASSWORD" Default="mypass" Mode="" Description="Container Variable: USER_PASSWORD" Type="Variable" Display="always" Required="true">mypass</Config>
 </Container>
