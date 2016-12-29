@@ -1,0 +1,28 @@
+<Container>
+  <Name>SpaceEngineers-Server</Name>
+  <Repository>yohan460/SpaceEngineers-Server</Repository>
+  <Registry>https://registry.hub.docker.com/r/yohan460/spaceengineers-server</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <BindTime>True</BindTime>
+  <Support>http://lime-technology.com/forum/index.php?topic=51498.0</Support>
+  <Overview>Space Engineers is a sandbox game about engineering, construction, exploration and survival in space and on planets. Players build space ships, space stations, planetary outposts of various sizes and uses, pilot ships and travel through space to explore planets and gather resources to survive.
+  [br]
+  This docker contianer contains a Space Engineers server configured based on the configuration file located at Yohan460/SpaceEngineers-Server Github Repository
+  [br]
+  [b]Container Ports:[/b][br]
+  [b]25626[/b] Outward facing connection port[br]
+  </Overview>
+  <Category>MediaServer:Other</Category>
+  <TemplateURL>https://github.com/Yohan460/unraid-templates/blob/master/SpaceEngineers-Server.xml</TemplateURL>
+  <Icon>http://bluekae.com/wp-content/uploads/2014/08/space_engineers_square_1024.png</Icon>
+  <DateInstalled>1480139680</DateInstalled>
+  <Description>Space Engineers is a sandbox game about engineering, construction, exploration and survival in space and on planets. Players build space ships, space stations, planetary outposts of various sizes and uses, pilot ships and travel through space to explore planets and gather resources to survive.
+  [br]
+  This docker contianer contains a Space Engineers server configured based on the configuration file located at Yohan460/SpaceEngineers-Server Github Repository
+  [br]
+  [b]Container Ports:[/b][br]
+  [b]25626[/b] Outward facing connection port[br]
+  </Description>
+  <Network Default="bridge">bridge</Network>
+</Container>
