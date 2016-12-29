@@ -25,5 +25,5 @@
   [b]25626[/b] Outward facing connection port[br]
   </Description>
   <Network Default="bridge">bridge</Network>
-  <Config Name="minecraft server ports" Target="25626" Default="25626" Mode="tcp/udp" Description="Space Engineers requires an outward facing port" Type="Port" Display="always" Required="true">25626</Config>
+  <Config Name="Space Engineers Server port" Target="25626" Default="25626" Mode="tcp/udp" Description="Space Engineers requires an outward facing port" Type="Port" Display="always" Required="true">25626</Config>
 </Container>
